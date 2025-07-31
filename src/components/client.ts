@@ -170,7 +170,7 @@ export class <%= className %> {
     return this.rpc.stopBatch();
   }
 
-  private async request(methodName: string, params: any[]): Promise<any> {
+  private async request(methodName: string, params: any): Promise<any> {
     await this.initialize();
     if (this.validator === undefined) {
       throw new Error("internal error");
@@ -214,7 +214,7 @@ export class <%= className %> {
    * <%= method.summary %>
    */
   // tslint:disable-next-line:max-line-length
-  public <%= method.name %>: <%= methodTypings.getTypingNames("typescript", method).method %> = (...params) => {
+  public <%= method.name %>: <%= methodTypings.getTypingNames("typescript", method).method %> = (params) => {
     return this.request("<%= method.name %>", params);
   }
   <% }); %>
