@@ -14,7 +14,7 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@open-rpc/client-js": "1.8.1",
+    "@open-rpc/client-js": "https://github.com/pz-tapioca-verandah/client-js.git#aeibase",
     "@open-rpc/meta-schema": "1.14.9",
     "@open-rpc/schema-utils-js": "2.1.2",
     "lodash": "^4.17.15"
