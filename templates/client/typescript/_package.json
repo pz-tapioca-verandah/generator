@@ -5,7 +5,7 @@
   "type": "module",
   "main": "build/index.js",
   "scripts": {
-    "build": "tsc && typedoc src/index.ts --out docs --excludeExternals --excludePrivate --hideGenerator --readme none",
+    "build": "tsc",
     "lint": "eslint src/**/*.ts"
   },
   "files": [
